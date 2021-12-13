@@ -9,6 +9,7 @@ router.get('/teacher', (ctx) => {
     };
 });
 
+
 router.post('/teacher', (ctx) => {
     ctx.body = {
         status: 204,
