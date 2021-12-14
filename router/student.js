@@ -1,5 +1,5 @@
 const Router = require('koa-router');//引入koa路由
-const studentRepository = require('../repository/student');
+const studentRepository = require('../repository/student');//引入学生仓库
 
 const router = new Router();
 
