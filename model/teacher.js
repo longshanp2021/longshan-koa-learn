@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema();
+const Schema = mongoose.Schema;
 
-const TeacherSchema = Schema({
+const TeacherSchema = new Schema({
     name: {
         type: String,
         require: true
@@ -23,6 +23,7 @@ const TeacherSchema = Schema({
         default: Date.now
     },
 
-})
+});
+let Teacher = mongoose.model('teachers', TeacherSchema);
 
-module.exports = mongoose.modelNamesl('teachers', TeacherSchema);
+module.exports = Teacher;
